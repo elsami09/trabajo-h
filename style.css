@@ -124,7 +124,9 @@ animation: none;
     margin: 30px 20px;
 font-size: 14px;
 }
-
+a{
+    text-decoration: none;
+}
 
 
 /*NAV INTER*/
@@ -901,4 +903,5 @@ color: var(--bg-footer);
 }
 
 }
+
 
