@@ -22,27 +22,78 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+<header class="header-inicio">
+  <a href="tel:+18095551234"><i class="fas fa-phone"></i><span>809-222-3701</span></a>
 
+  <a href="https://wa.me/18095551234" class="comezar-icono-a"><i class="fas fa-comment-dots"></i><span>Cotización en línea ahora</span></a>
+
+</header>
   <!-- Sección de navegación -->
   <nav class="nav-container" aria-label="Menú principal">  
     <!-- Logo -->
-    <a href="#">
-      <img src="img/log.webp" alt="Logo de Hispamedia, enlaza a página principal" class="log">
-    </a> 
-
+  <div class="logo-conteiner">
+      <a href="#">
+        <img src="img/logo-completo.webp" alt="Logo de Hispamedia, enlaza a página principal" class="log">
+      </a> 
+      <a href="#" class="log-info">Soluciones a su medida Rep. Dom.</a>
+  </div>
     <!-- Menú oculto inicialmente -->
-    <div class="nav-container-inner display-none" id="nav-container-inner">
-      <a href="#" title="Inicio">Inicio</a> 
-      <a href="#" title="Servicios">Servicios</a>
-      <a href="#Conclusión" title="Estándares del Diseño Web">Estándares del Diseño Web</a>
-    </div>
 
+<div class="nav-container-inner " id="nav-container-inner">
+  <a href="#">Inicio</a>
+
+  <div class="dropdown">
+    <input type="checkbox" id="quienes-somos" class="toggle">
+    <label for="quienes-somos" class="dropbtn">Quiénes Somos ▾</label>
+    <div class="dropdown-content">
+      <a href="#">Misión</a>
+      <a href="#">Visión</a>
+      <a href="#">Nuestro Equipo</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <input type="checkbox" id="servicios" class="toggle">
+    <label for="servicios" class="dropbtn">Servicios ▾</label>
+    <div class="dropdown-content">
+      <a href="#">Consultoría</a>
+      <a href="#">Desarrollo</a>
+      <a href="#">Soporte</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <input type="checkbox" id="productos" class="toggle">
+    <label for="productos" class="dropbtn">Productos ▾</label>
+    <div class="dropdown-content">
+      <a href="#">Producto 1</a>
+      <a href="#">Producto 2</a>
+      <a href="#">Producto 3</a>
+      <a href="#">Producto 4</a>
+      <a href="#">Producto 5</a>
+    </div>
+  </div>
+
+  <a href="#">Clientes</a><br>
+  <a href="#">Contacto</a>
+</div>
     <!-- Icono del menú -->
     <div class="nav-container-icono" id="nav-container-icono">
       <i class="fas fa-bars" id="fa-bars" aria-label="Abrir menú de navegación"></i>
     </div>
   </nav>
-
+  
+  <!-- Sección menu -02 -->
+  <section class="menu-disc"> 
+    <ul class="lista-menu">
+      <li class="menu"><a href="">/ Home</a></li>
+      <li class="il-menu"><a href="">/ Servicios</a></li>
+      <li class="il-menu"><a href="">/ Mantenimiento de paginas webs</a></li>
+    </ul>
+    <div class="section-menu">
+      <a href=""><span>/</span> Mantenimiento Web</a><a href=""><span>/</span> Actulizacines</a><a href=""><span>/</span> Mantenimiento</a><a href=""><span>/</span> Webmaster</a>
+    </div>
+  </section>
   <!-- Sección de Título -->
   <section class="title-section"> 
     <h1>Estándares del Diseño Web</h1>
@@ -58,10 +109,13 @@
   </section>      
 
   <!-- Contenido principal -->
-  <main class="main"> 
+  <section class="main-section">
+  <main class="main">
+
     <div class="main-container"> 
       <!-- Artículo principal -->
       <article class="content-article">
+        
         <header class="post-header" id="Diseño-web">
           <img src="img/estanreaser-diseño.webp" alt="Infografía mostrando los estándares de diseño web" loading="lazy">
           <h2>La importancia de seguir los estándares del diseño web</h2>
@@ -185,12 +239,28 @@
       <div class="ball last"></div>
   </div>
 </div></li>
-          </ul>
+            </ul>
+            </div>
+          </section>
         </div>
-      </section>
-
-    </div>
-  </main>
+    </main>
+<div class="servicios-container">
+      <h3>: Más Servicios :</h3>
+      <button class="btn-ordenar">Ordenar Ahora!</button>
+      <ul class="lista-servicios">
+        <li><i class="fas fa-cog"></i> Quienes Somos</li>
+        <li><i class="fas fa-cog"></i> SEO XP</li>
+        <li><i class="fas fa-cog"></i> Diseño páginas web</li>
+        <li><i class="fas fa-cog"></i> Hospedaje Web Premium</li>
+        <li><i class="fas fa-cog"></i> Desarrollo de páginas web</li>
+      </ul>
+  <picture class="logos-htm-css-js">
+        <img src="img/html5.webp" alt="imagen log html5">
+      <img src="img/css-3-logo.webp" alt="imagen log css3">
+      <img src="img/js-logo.webp" alt="imagen log JavaScript">
+  </picture>
+  </div>
+</section>
 <!-- Área de contacto -->
 <section class="contact-section" id="contacto">
   <div class="contact-container">
@@ -238,7 +308,7 @@
       <li><a href="#">Cómo hacer tu web más rápida</a></li>
     </ul>
 
-    <hr>
+
 
     <div class="tags">
       <h4>Etiquetas</h4>
