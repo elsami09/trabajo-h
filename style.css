@@ -100,6 +100,7 @@
         .comezar-icono-a{
         border-left: 1px solid var(--bg-banner-dark);
         }
+
         /* === SECCIÓN DE NAVEGACIÓN === */
 .nav-container{
     height: 70px;
@@ -128,7 +129,6 @@ font-size: 14px;
 a{
     text-decoration: none;
 }
-
 
 /*NAV INTER*/
     .nav-container-inner{
@@ -183,16 +183,24 @@ border-bottom: 2px solid var(--color-primary-light);
     padding-left: 15px;
     }
 
-    .toggle:checked + .dropbtn + .dropdown-content {
+    .toggle:checked + .dropbtn + .dropdown-content{
     display: flex;
     transition: max-height 0.5s ease, opacity 0.5s ease;
     }
 
     .dropdown-content a {
+        width: 100%;
+        display: flex;
+        align-items: center;
     text-decoration: none;
     color: var(--color-primary-dark);
-    }
+        padding: 5px;
 
+    }
+    .dropdown-content :hover {
+        background-color: var(--color-primary-light);
+        color: var(--color-white);
+    }
 
 /*Icono nav*/
 .nav-container-icono i {
@@ -868,10 +876,10 @@ flex-direction: column;
         display: none; 
     }
         .dropdown-content {
-    background-color: var(--color-white);
-            padding: 15px;
-            border-bottom: 2px solid var(--bg-footer);
-            border-radius: 0px 0px 10px 10px;
+            margin: 10px;
+    background-color: var(--color-white-light);
+    border-bottom: 3px solid var(--color-btn-hover-end);
+    padding: 0;
     }
 
 a{
@@ -904,6 +912,4 @@ color: var(--bg-footer);
 }
 
 }
-
-
 
