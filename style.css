@@ -90,6 +90,7 @@
         .header-inicio i{
             margin-top: 15px;
             margin-left: 5px;
+            color: var(--color-azul);
         }
         .header-inicio span{
             cursor: pointer;
@@ -903,5 +904,6 @@ color: var(--bg-footer);
 }
 
 }
+
 
 
