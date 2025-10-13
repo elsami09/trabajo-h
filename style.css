@@ -664,11 +664,15 @@ border-top: 3px solid 10px;
 /* ======= ASIDE (Barra lateral) ======= */
     .sidebars {
     background: var(--color-white-light);
-    border: 1px solid var(--color-tierra);
-    border-radius: 12px;
+    border-top: 2px solid var(--color-btn-hover-end);
     padding: 20px;
     margin-top: 20px;
-    box-shadow: 0 2px 6px var(--bg-banner-dark);
+        view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline:--image ;
+    animation-name:show;
+    animation-range:entry 25% cover 50%;
+    animation-fill-mode:both;
     }
 
     .sidebars h3 {
