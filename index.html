@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- 
+    METADATOS BÁSICOS
+    Define la codificación, compatibilidad y configuración general del documento.
+  -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta http-equiv="Content-Language" content="es">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- TÍTULO Y DESCRIPCIÓN -->
   <title>Estándares del Diseño Web | Hispamedia</title>
   <meta name="description" content="Conoce los estándares del diseño web que garantizan sitios accesibles, rápidos, adaptables y compatibles con todos los navegadores modernos.">
   <meta name="robots" content="index, follow">
@@ -13,76 +19,89 @@
   <meta name="classification" content="Diseño Web">
   <meta name="author" content="Hispamedia desarrollo web, S.A.">
 
-  <!-- Theme CSS -->
-<link rel="stylesheet" href="style.css">
-  <!-- Favicons -->
+  <!-- ENLACE A HOJA DE ESTILOS PRINCIPAL -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FAVICON -->
   <link rel="shortcut icon" href="img/log.webp" type="image/webp">
 
-  <!-- Font Awesome -->
+  <!-- ICONOS (FONT AWESOME) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
-<header class="header-inicio">
-  <a href="tel:+18092223701"><i class="fas fa-phone"></i><span>809-222-3701</span></a>
-  <a href="https://wa.me/8092223701" class="comezar-icono-a"><i class="fas fa-comment-dots"></i><span>Cotización en línea ahora</span></a>
-  
-</header>
-  <!-- Sección de navegación -->
+  <!-- ENCABEZADO SUPERIOR CON DATOS DE CONTACTO -->
+  <header class="header-inicio">
+    <a href="tel:+18092223701"><i class="fas fa-phone"></i><span>809-222-3701</span></a>
+    <a href="https://wa.me/8092223701" class="comezar-icono-a"><i class="fas fa-comment-dots"></i><span>Cotización en línea ahora</span></a>
+  </header>
+
+  <!-- 
+    NAVEGACIÓN PRINCIPAL
+    Contiene el logotipo, enlaces y menús desplegables.
+  -->
   <nav class="nav-container" aria-label="Menú principal">  
-    <!-- Logo -->
-  <div class="logo-conteiner">
+    <!-- LOGO -->
+    <div class="logo-conteiner">
       <a href="#">
         <img src="img/logo-completo.webp" alt="Logo de Hispamedia, enlaza a página principal" class="log">
       </a> 
       <a href="#" class="log-info">Soluciones a su medida Rep. Dom.</a>
-  </div>
-    <!-- Menú oculto inicialmente -->
-
-<div class="nav-container-inner " id="nav-container-inner">
-  <a href="#">Inicio</a>
-
-  <div class="dropdown">
-    <input type="checkbox" id="quienes-somos" class="toggle">
-    <label for="quienes-somos" class="dropbtn">Quiénes Somos ▾</label>
-    <div class="dropdown-content">
-      <a href="#">Misión</a>
-      <a href="#">Visión</a>
-      <a href="#">Nuestro Equipo</a>
     </div>
-  </div>
 
-  <div class="dropdown">
-    <input type="checkbox" id="servicios" class="toggle">
-    <label for="servicios" class="dropbtn">Servicios ▾</label>
-    <div class="dropdown-content">
-      <a href="#">Consultoría</a>
-      <a href="#">Desarrollo</a>
-      <a href="#">Soporte</a>
+    <!-- MENÚ PRINCIPAL (oculto en móviles) -->
+    <div class="nav-container-inner" id="nav-container-inner">
+      <a href="#">Inicio</a>
+
+      <!-- SUBMENÚ: QUIÉNES SOMOS -->
+      <div class="dropdown">
+        <input type="checkbox" id="quienes-somos" class="toggle">
+        <label for="quienes-somos" class="dropbtn">Quiénes Somos ▾</label>
+        <div class="dropdown-content">
+          <a href="#">Misión</a>
+          <a href="#">Visión</a>
+          <a href="#">Nuestro Equipo</a>
+        </div>
+      </div>
+
+      <!-- SUBMENÚ: SERVICIOS -->
+      <div class="dropdown">
+        <input type="checkbox" id="servicios" class="toggle">
+        <label for="servicios" class="dropbtn">Servicios ▾</label>
+        <div class="dropdown-content">
+          <a href="#">Consultoría</a>
+          <a href="#">Desarrollo</a>
+          <a href="#">Soporte</a>
+        </div>
+      </div>
+
+      <!-- SUBMENÚ: PRODUCTOS -->
+      <div class="dropdown">
+        <input type="checkbox" id="productos" class="toggle">
+        <label for="productos" class="dropbtn">Productos ▾</label>
+        <div class="dropdown-content">
+          <a href="#">Producto 1</a>
+          <a href="#">Producto 2</a>
+          <a href="#">Producto 3</a>
+          <a href="#">Producto 4</a>
+          <a href="#">Producto 5</a>
+        </div>
+      </div>
+
+      <!-- ENLACES DIRECTOS -->
+      <a href="#">Clientes</a><br>
+      <a href="#">Contacto</a>
     </div>
-  </div>
 
-  <div class="dropdown">
-    <input type="checkbox" id="productos" class="toggle">
-    <label for="productos" class="dropbtn">Productos ▾</label>
-    <div class="dropdown-content">
-      <a href="#">Producto 1</a>
-      <a href="#">Producto 2</a>
-      <a href="#">Producto 3</a>
-      <a href="#">Producto 4</a>
-      <a href="#">Producto 5</a>
-    </div>
-  </div>
-
-  <a href="#">Clientes</a><br>
-  <a href="#">Contacto</a>
-</div>
-    <!-- Icono del menú -->
+    <!-- ÍCONO HAMBURGUESA PARA MÓVILES -->
     <div class="nav-container-icono" id="nav-container-icono">
       <i class="fas fa-bars" id="fa-bars" aria-label="Abrir menú de navegación"></i>
     </div>
   </nav>
-  
-  <!-- Sección menu -02 -->
+  <!-- 
+    SECCIÓN DE RUTA DE NAVEGACIÓN (BREADCRUMB)
+    Muestra la posición actual dentro del sitio.
+  -->
   <section class="menu-disc"> 
     <ul class="lista-menu">
       <li class="menu"><a href="">/ Home</a></li>
@@ -93,13 +112,13 @@
       <a href=""><span>/</span> Mantenimiento Web</a><a href=""><span>/</span> Actulizacines</a><a href=""><span>/</span> Mantenimiento</a><a href=""><span>/</span> Webmaster</a>
     </div>
   </section>
-  <!-- Sección de Título -->
+  <!-- TÍTULO PRINCIPAL DE LA PÁGINA -->
   <section class="title-section"> 
     <h1>Estándares del Diseño Web</h1>
     <p class="lead">Guía moderna para desarrollar sitios accesibles, funcionales y visualmente consistentes.</p>
   </section>
 
-  <!-- ¡Solicita asesoría! -->
+  <!-- BOTÓN DE LLAMADA A LA ACCIÓN -->
   <section class="Solicita-asesoría"> 
     <div class="asesoria-container"> 
       <p class="lead">Aplica los estándares de diseño web y mejora la experiencia de tus usuarios.</p> 
@@ -107,19 +126,19 @@
     </div>
   </section>      
 
-  <!-- Contenido principal -->
+  <!-- CONTENIDO PRINCIPAL -->
   <section class="main-section">
   <main class="main">
 
     <div class="main-container"> 
-      <!-- Artículo principal -->
+      <!-- ARTÍCULO PRINCIPAL -->
       <article class="content-article">
         
         <header class="post-header" id="Diseño-web">
           <img src="img/estanreaser-diseño.webp" alt="Infografía mostrando los estándares de diseño web" loading="lazy">
           <h2>La importancia de seguir los estándares del diseño web</h2>
         </header>
-
+        <!-- TEXTO PRINCIPAL -->
         <div class="info-post">
           <p>
             Los estándares del diseño web garantizan que un sitio sea accesible, rápido, coherente y adaptable a cualquier dispositivo. 
@@ -132,7 +151,7 @@
           </p>
         </div>
 
-        <!-- Secciones con imágenes y alt descriptivo -->
+        <!-- SECCIONES TEMÁTICAS CON IMÁGENES -->
         <section id="Accesibilidad-usabilidad">
           <img src="img/Accesibilidad y usabilidad.webp" alt="Representación visual de accesibilidad y usabilidad web" loading="lazy">
           <h2>1. Accesibilidad y usabilidad</h2>
@@ -218,7 +237,7 @@
         </section>
       </article>
 
-      <!-- Mejores prácticas -->
+      <!-- SECCIÓN DE MEJORES PRÁCTICAS -->
       <section class="web-best-practices">
         <div class="container-prácticas">
           <h2>Mejores prácticas para tu sitio web</h2>
@@ -228,21 +247,24 @@
             <li><strong>Optimización SEO técnica:</strong> Mejora la visibilidad de tu sitio mediante un código limpio, velocidad de carga adecuada y estructuras comprensibles para los buscadores.</li>
             <li><strong>Tendencias del diseño moderno:</strong> Mantente actualizado con estilos visuales actuales, tipografías legibles, paletas de colores armónicas y elementos interactivos.</li>
             <li><strong>Cómo hacer tu web más rápida:</strong> Reduce el tamaño de imágenes, minimiza CSS y JavaScript, utiliza caché y aprovecha formatos modernos como WebP para ofrecer tiempos de carga óptimos.</li>
-            <!--ANIMACION PENDULO-->
-                        <li><div class="pendulum">
-  <div class="pendulum_box">
-    <div class="ball first"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball last"></div>
-  </div>
-</div></li>
-            </ul>
+            <!-- ANIMACIÓN DEL PÉNDULO -->
+                    <li><div class="pendulum">
+                    <div class="pendulum_box">
+                      <div class="ball first"></div>
+                        <div class="ball"></div>
+                        <div class="ball"></div>
+                        <div class="ball"></div>
+                        <div class="ball last"></div>
+                      </div>
+                      </div>
+                    </li>
+                </ul>
             </div>
           </section>
         </div>
     </main>
+
+<!-- BARRA LATERAL DE SERVICIOS -->
 <div class="servicios-container">
       <h3>: Más Servicios :</h3>
       <button class="btn-ordenar">Ordenar Ahora!</button>
@@ -253,6 +275,7 @@
         <li><i class="fas fa-cog"></i> Hospedaje Web Premium</li>
         <li><i class="fas fa-cog"></i> Desarrollo de páginas web</li>
       </ul>
+      <!-- LOGOS DE TECNOLOGÍAS -->
   <picture class="logos-htm-css-js">
         <img src="img/html5.webp" alt="imagen log html5">
       <img src="img/css-3-logo.webp" alt="imagen log css3">
@@ -260,14 +283,14 @@
   </picture>
   </div>
 </section>
-<!-- Área de contacto -->
+<!-- SECCIÓN DE CONTACTO -->
 <section class="contact-section" id="contacto">
   <div class="contact-container">
     <h2>Contáctanos</h2>
     <p>¿Tienes preguntas o quieres trabajar con nosotros? Envíanos un mensaje y te responderemos pronto.</p>
 
     <div class="contact-content">
-      <!-- Formulario -->
+      <!-- FORMULARIO DE CONTACTO -->
 <form class="contact-form" id="contactForm" action="#" method="post">
   <label for="nombre">Nombre</label>
   <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
@@ -280,9 +303,7 @@
 
   <button type="submit">Enviar</button>
 </form>
-<!-- Botón grande de WhatsApp -->
-
-      <!-- Mapa -->
+<!-- MAPA DE GOOGLE + BOTÓN DE WHATSAPP -->
       <div class="contact-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27991444916!2d-74.25987568741605!3d40.69714942262653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b21b9b75f9%3A0x7366c06d1c207f44!2sNew%20York%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sdo!4v1702347740123!5m2!1ses-419!2sdo"
@@ -297,7 +318,7 @@
 </section>
 
 
-  <!-- Barra lateral -->
+    <!-- ASIDE CON TEMAS RELACIONADOS -->
   <aside class="col-md-4 sidebars">
     <h3>Temas relacionados</h3>
     <ul>
@@ -306,9 +327,7 @@
       <li><a href="#">Tendencias del diseño moderno</a></li>
       <li><a href="#">Cómo hacer tu web más rápida</a></li>
     </ul>
-
-
-
+    <!-- ETIQUETAS Y ENLACES INTERNOS -->
     <div class="tags">
       <h4>Etiquetas</h4>
       <a href="#Diseño-web" title="Diseño web">Diseño Web</a>
@@ -317,13 +336,13 @@
       <a href="#" title="HTML5 y CSS3">HTML5 y CSS3</a>
       <a href="#Responsive" title="Responsive Design">Responsive Design</a>
     </div>
-
+    <!-- IMAGEN ILUSTRATIVA -->
     <figure class="sidebar-image">
       <img src="img/Diseño web estandarizado.webp" alt="Ejemplo de diseño web estandarizado" loading="lazy">
     </figure>
   </aside>
 
-  <!-- Pie de página -->
+    <!-- PIE DE PÁGINA -->
   <footer class="footer">
     <div class="footer-container">
       <p>&copy; 2025 Hispamedia.</p>
@@ -332,6 +351,7 @@
         <a href="#">Términos de uso</a>
         <a href="#">Contacto</a>
       </nav>
+      <!-- ICONOS DE REDES SOCIALES -->
       <div class="social-icons">
   <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
   <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
@@ -342,7 +362,7 @@
 </div>
     </div>
   </footer>
-  <!-- Scripts -->
-   <script src="app.js" type="module"></script>
+  <!-- SCRIPT PRINCIPAL -->
+    <script src="app.js" type="module"></script>
 </body>
 </html>
